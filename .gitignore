@@ -30,11 +30,11 @@ npm-debug.log
 /es6/
 
 # browser builds
-/bundle/
+# /bundle/
 
 # metadata
-/metadata.json
-/metadata.full.json
-/metadata.min.json
-/metadata.mobile.json
+# /metadata.json
+# /metadata.full.json
+# /metadata.min.json
+# /metadata.mobile.json
 /examples.mobile.json

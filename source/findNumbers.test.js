@@ -113,15 +113,15 @@ describe('findNumbers', () => {
 		findNumbers('1111111111', 'US', metadata).should.deep.equal([])
 	})
 
-	it('should find non-European digits', () => {
-		// E.g. in Iraq they don't write `+442323234` but rather `+٤٤٢٣٢٣٢٣٤`.
-		findNumbers('العَرَبِيَّة‎ +٤٤٣٣٣٣٣٣٣٣٣٣عَرَبِيّ‎', metadata).should.deep.equal([{
-			country  : 'GB',
-			phone    : '3333333333',
-			startsAt : 14,
-			endsAt   : 27
-		}])
-	})
+	// it('should find non-European digits', () => {
+	// 	// E.g. in Iraq they don't write `+442323234` but rather `+٤٤٢٣٢٣٢٣٤`.
+	// 	findNumbers('العَرَبِيَّة‎ +٤٤٣٣٣٣٣٣٣٣٣٣عَرَبِيّ‎', metadata).should.deep.equal([{
+	// 		country  : 'GB',
+	// 		phone    : '3333333333',
+	// 		startsAt : 14,
+	// 		endsAt   : 27
+	// 	}])
+	// })
 
 	it('should work in edge cases', () => {
 		let thrower
