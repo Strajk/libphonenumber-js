@@ -26,8 +26,9 @@ npm-debug.log
 *.sublime-workspace
 
 # webpack build target folder
-/build/
-/es6/
+# @strajk: added to repo to enable using directly from GitHub
+# /build/
+# /es6/
 
 # browser builds
 # /bundle/
